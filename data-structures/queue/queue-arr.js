@@ -1,0 +1,3 @@
+class QueueArr {
+  storage = [];
+}
