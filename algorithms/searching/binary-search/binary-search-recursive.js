@@ -1,7 +1,7 @@
 // Assumes the input array is already sorted
 // Divide and Conquer
 // Time Complexity: O(log n)
-// Space Complexity: O(1)
+// Space Complexity: O(log n), recursive call stack
 const binarySearchRecursive = (nums, target, start, end) => {
   // base condition, return false (target not found)
   if (start > end) {
