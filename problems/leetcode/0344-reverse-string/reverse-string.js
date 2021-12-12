@@ -12,5 +12,4 @@ const reverseString = (s) => {
     s[i] = s[l - 1 - i];
     s[l - 1 - i] = tmp;
   }
-  return s;
 };
