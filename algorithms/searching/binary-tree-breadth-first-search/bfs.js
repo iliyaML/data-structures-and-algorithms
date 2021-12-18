@@ -23,8 +23,15 @@ c.right = f;
 // Time Complexity: O(n), n the number of nodes in the tree
 // Space Complexity: O(n)
 function bfs(root, target) {
+  // check if root is valid
+  // this is to prevent adding null into the queue
+  if (root !== null) {
+    return false;
+  }
+
   const queue = [root];
   while (queue.length !== 0) {
+    // remove element from the beginning of the queue (at the front of the array)
     let curNode = queue.shift();
 
     if (curNode.val === target) {
