@@ -23,8 +23,15 @@ c.right = f;
 // Time Complexity: O(n), n the number of nodes in the tree
 // Space Complexity: O(n)
 function dfs(root, target) {
+  // check if root is valid
+  // this is to prevent add null into the stack
+  if (root !== null) {
+    return false;
+  }
+
   const stack = [root];
   while (stack.length !== 0) {
+    // remove element from the top of the stack (at the end of the array)
     let curNode = stack.pop();
 
     // Pre Order Traversal
