@@ -19,7 +19,6 @@ arr.shift();
 // first parameter: index
 // second parameter: number of items to remove
 arr.splice(0, 1);
-arr.split();
 
 // get item at a particular index
 arr[10];
@@ -29,3 +28,13 @@ arr[arr.length - 1];
 
 // returns a string version of the array
 arr.toString();
+
+// looping through items in an array
+for (let i = 0, l = arr.length; i < l; ++i) {
+  console.log(arr[i]);
+}
+
+// alternative, does not have the counter i
+for (let item of arr) {
+  console.log(item);
+}
