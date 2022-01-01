@@ -11,9 +11,11 @@ const selectionSort = (arr) => {
       }
     }
 
-    let tmp = arr[min_idx];
-    arr[min_idx] = arr[i];
-    arr[i] = tmp;
+    if (min_idx !== i) {
+      let tmp = arr[min_idx];
+      arr[min_idx] = arr[i];
+      arr[i] = tmp;
+    }
   }
 };
 
