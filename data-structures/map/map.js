@@ -14,3 +14,6 @@ myMap.has("a");
 
 // delete a key from the map
 myMap.delete("a");
+
+// remove all items
+myMap.clear();
