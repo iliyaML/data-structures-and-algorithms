@@ -14,3 +14,8 @@ mySet.delete(123);
 
 // remove all items in the set
 mySet.clear();
+
+// loop through items in the set
+for (let item of mySet) {
+  console.log(item);
+}
