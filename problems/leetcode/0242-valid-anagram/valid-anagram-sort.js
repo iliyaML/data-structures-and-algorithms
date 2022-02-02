@@ -10,8 +10,11 @@ const isAnagram = function (s, t) {
   if (s.length !== t.length) {
     return false;
   }
+
+  // sort s and t and convert them to strings
   const sortedS = s.split("").sort().toString();
   const sortedT = t.split("").sort().toString();
 
+  // if the two sorted strings are equal, then they are anagrams
   return sortedS === sortedT;
 };
