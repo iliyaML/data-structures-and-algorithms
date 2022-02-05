@@ -1,6 +1,6 @@
 /**
  * Time Complexity: O(n), n is the size of the string
- * Space Complexity: O(n), array to keep track of our count
+ * Space Complexity: O(1), array is of fixed size since it only contains lowercase letters
  * @param {string} s
  * @param {string} t
  * @return {boolean}
@@ -10,6 +10,8 @@ const isAnagram = function (s, t) {
   if (s.length !== t.length) {
     return false;
   }
+
+  // at this point, s.length and t.length are equal
 
   // array to keep track of character occurences
   const arrCount = new Array(26).fill(0);
