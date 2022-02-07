@@ -29,6 +29,21 @@ arr[arr.length - 1];
 // returns a string version of the array
 arr.toString();
 
+// joins an array, equivalent to toString()
+arr.join("");
+
+// reverse the array
+arr.reverse();
+
+// create an array with a certain size and initial value
+// may not be supported by all browsers (looking at you IE)
+new Array(26).fill(0);
+
+// sorting in ascending order
+arr.sort(function (a, b) {
+  return a - b;
+});
+
 // looping through items in an array
 for (let i = 0, l = arr.length; i < l; ++i) {
   console.log(arr[i]);
