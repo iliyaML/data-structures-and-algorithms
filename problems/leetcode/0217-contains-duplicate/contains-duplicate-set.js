@@ -15,3 +15,6 @@ const containsDuplicate = (nums) => {
 
   return false;
 };
+
+// unoptimized approach
+// const containsDuplicate = (nums) => (new Set(nums)).size !== nums.length;
