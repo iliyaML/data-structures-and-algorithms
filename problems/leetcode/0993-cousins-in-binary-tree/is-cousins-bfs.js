@@ -68,7 +68,7 @@ const isCousins = (root, x, y) => {
 
     // if we found one of them but not the other, we immediately return false
     // as they are definitely not cousins
-    if ((foundX && foundY === null) || (foundY && foundX === null)) {
+    if (foundX || foundY) {
       return false;
     }
   }
