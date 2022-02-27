@@ -1,6 +1,5 @@
 /**
  * Assumes the input array is already sorted
- * Divide and Conquer
  * Time Complexity: O(log n)
  * Space Complexity: O(log n), recursive call stack
  * @param {*} nums
@@ -16,7 +15,8 @@ const binarySearchRecursive = (nums, target, start, end) => {
   }
 
   // evaluate the element in the middle
-  let mid = Math.floor((start + end) / 2);
+  // to help avoid integer overflow
+  let mid = start + Math.floor((end - start) / 2);
 
   // there are 3 cases we need to check
   if (nums[mid] === target) {

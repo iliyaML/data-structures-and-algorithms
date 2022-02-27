@@ -1,6 +1,5 @@
 /**
  * Assumes the input array is already sorted
- * Divide and Conquer
  * Time Complexity: O(log n)
  * Space Complexity: O(1)
  * @param {*} nums
@@ -14,7 +13,8 @@ const binarySearchIterative = (nums, target) => {
   let end = nums.length - 1;
 
   while (start <= end) {
-    let mid = Math.floor((start + end) / 2);
+    // to help avoid integer overflow
+    let mid = start + Math.floor((end - start) / 2);
     // there are 3 cases we need to check
     if (nums[mid] === target) {
       // evaluate at the mid point

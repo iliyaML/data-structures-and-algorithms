@@ -18,11 +18,12 @@ const searchMatrix = (matrix, target) => {
   let startIndex = 0;
   let endIndex = m * n - 1;
   while (startIndex <= endIndex) {
-    let midIndex = Math.floor((startIndex + endIndex) / 2);
+    // to help avoid integer overflow
+    let midIndex = startIndex + Math.floor((endIndex - startIndex) / 2);
     let valueAtIndex = matrix[Math.floor(midIndex / n)][midIndex % n];
 
     if (valueAtIndex === target) {
-      return true;
+      return [Math.floor(midIndex / n), midIndex % n];
     } else if (valueAtIndex > target) {
       endIndex = midIndex - 1;
     } else if (valueAtIndex < target) {
@@ -30,5 +31,16 @@ const searchMatrix = (matrix, target) => {
     }
   }
 
-  return false;
+  return [-1, -1];
 };
+
+let matrix = [
+  [0, 1, 2, 3, 4],
+  [5, 6, 7, 8, 9],
+  [10, 11, 12, 13, 14],
+  [15, 16, 17, 18, 19],
+  [20, 21, 22, 23, 24],
+];
+console.log(searchMatrix(matrix, 23)); // [4, 3]
+console.log(searchMatrix(matrix, 0)); // [0, 0]
+console.log(searchMatrix(matrix, 100)); // [-1, -1]
