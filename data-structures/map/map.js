@@ -1,3 +1,5 @@
+// caveats: don't use objects as keys, use strings instead
+
 const myMap = new Map();
 
 // get size of map
@@ -17,3 +19,9 @@ myMap.delete("a");
 
 // remove all items
 myMap.clear();
+
+// return keys as a list
+[...myMap.keys()];
+
+// return values as a list
+[...myMap.values()];
