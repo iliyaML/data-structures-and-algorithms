@@ -7,14 +7,12 @@
 const moveZeroes = (nums) => {
   let left = 0;
   for (let right = 0, l = nums.length; right < l; ++right) {
-    // continue to iterate until the number of left points to zero
-    if (nums[left] !== 0) {
-      ++left;
-    } else if (nums[right] !== 0) {
-      // if left points to zero, and right is not zero
-      // we swap their values and increment left
-      nums[left] = nums[right];
-      nums[right] = 0;
+    if (nums[right] !== 0) {
+      // swap the values at left and right
+      let tmp = nums[right];
+      nums[right] = nums[left];
+      nums[left] = tmp;
+      // move the left pointer
       ++left;
     }
   }
