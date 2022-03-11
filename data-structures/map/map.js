@@ -2,11 +2,17 @@
 
 const myMap = new Map();
 
+const initializeMapWithValues = new Map([
+  ["key1", "val1"],
+  ["key2", "val2"],
+  ["key3", "val3"],
+]);
+
 // get size of map
 myMap.size;
 
 // add a key to the map
-myMapp.set("a", 1);
+myMap.set("a", 1);
 
 // get the value of a key
 myMap.get("a");
@@ -25,3 +31,7 @@ myMap.clear();
 
 // return values as a list
 [...myMap.values()];
+
+for (let [key, val] of myMap) {
+  console.log(key, val);
+}
