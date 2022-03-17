@@ -39,6 +39,7 @@ arr.reverse();
 // may not be supported by all browsers (looking at you IE)
 new Array(26).fill(0);
 
+// by default, the sort function sorts the items as strings
 // sorting in ascending order
 arr.sort(function (a, b) {
   return a - b;
