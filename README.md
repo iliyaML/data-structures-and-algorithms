@@ -2,7 +2,7 @@
 
 > Repo for data structures and algorithms
 
-Data Structures
+#### Data Structures
 
 - Array
 - Linked List
@@ -19,7 +19,7 @@ Data Structures
 - TRIE
 - Graph
 
-Algorithms
+#### Algorithms
 
 - Searching
 
@@ -30,6 +30,7 @@ Algorithms
   - More...
 
 - Sorting
+
   - Bubble Sort
   - Quick Sort
   - Selection Sort
