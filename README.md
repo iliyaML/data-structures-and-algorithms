@@ -6,16 +6,19 @@
 
 - Array
 - Linked List
-- Stack
-- Queue
 - Map
 - Set
-- Heap
+- Stack
+- Queue
+  - Priority Queue
 - Tree
   - Binary Tree
   - Binary Search Tree
   - AVL Tree
   - Red Black Tree
+- Heap
+  - Min Heap
+  - Max Heap
 - TRIE
 - Graph
 
@@ -34,4 +37,6 @@
   - Bubble Sort
   - Quick Sort
   - Selection Sort
+  - Insertion Sort
+  - Merge Sort
   - More...
