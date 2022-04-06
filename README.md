@@ -17,6 +17,7 @@
   - AVL Tree
   - Red Black Tree
 - Heap
+  - Binary Heap
   - Min Heap
   - Max Heap
 - TRIE
@@ -39,4 +40,5 @@
   - Selection Sort
   - Insertion Sort
   - Merge Sort
+  - Radix Sort
   - More...
