@@ -10,14 +10,12 @@
 - Set
 - Stack
 - Queue
-  - Priority Queue
 - Tree
   - Binary Tree
   - Binary Search Tree
   - AVL Tree
   - Red Black Tree
 - Heap
-  - Binary Heap
   - Min Heap
   - Max Heap
 - TRIE
@@ -31,6 +29,7 @@
   - Binary Search
   - Breadth First Search
   - Depth Frist Search
+  - Djikstra's Algorithm
   - More...
 
 - Sorting
