@@ -6,6 +6,8 @@
  * @return {number[]}
  */
 const topKFrequent = (nums, k) => {
+  // some form of the bucket sort algorithm
+
   // map to store
   // key: num
   // value: frequency
@@ -19,7 +21,9 @@ const topKFrequent = (nums, k) => {
   // create an array of size nums
   // index: frequency
   // value: list of nums
-  let arr = new Array(nums.length);
+
+  // length = nums.length + 1 to handle edge case with only 1 element
+  let arr = new Array(nums.length + 1);
 
   // iterate through the map and update the array
   for (let [num, frequency] of myMap) {
