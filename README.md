@@ -18,6 +18,7 @@
 - Heap
   - Min Heap
   - Max Heap
+- Priority Queue
 - TRIE
 - Graph
 
