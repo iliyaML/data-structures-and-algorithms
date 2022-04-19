@@ -25,14 +25,7 @@ const shiftGrid = (grid, k) => {
   };
 
   // populate the result grid with zeroes
-  let result = [];
-  for (let r = 0; r < m; ++r) {
-    let row = [];
-    for (let c = 0; c < n; ++c) {
-      row.push(0);
-    }
-    result.push(row);
-  }
+  let result = [...Array(m)].map((e) => Array(n).fill(0));
 
   for (let r = 0; r < m; ++r) {
     for (let c = 0; c < n; ++c) {
