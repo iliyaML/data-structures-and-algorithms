@@ -13,8 +13,8 @@
 - Tree
   - Binary Tree
   - Binary Search Tree
-  - AVL Tree
-  - Red Black Tree
+  - AVL Tree (in progress)
+  - Red Black Tree (in progress)
 - Heap
   - Min Heap
   - Max Heap
