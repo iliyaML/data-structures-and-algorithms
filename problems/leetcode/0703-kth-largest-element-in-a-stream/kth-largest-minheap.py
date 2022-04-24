@@ -4,6 +4,7 @@ class KthLargest:
         self.minHeap = nums
         self.k = k
 
+        # Time Complexity: O(n)
         # transform the list into a heap
         heapq.heapify(self.minHeap)
 
