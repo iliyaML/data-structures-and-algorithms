@@ -6,9 +6,7 @@
  * @return {number}
  */
 const findMaxAverage = (nums, k) => {
-  // initialize max average to the first element
-  // since there will be at least 1 element
-  let maxAverage = nums[0];
+  let maxAverage = -Infinity;
   let sum = 0;
 
   // sliding window algorithm
