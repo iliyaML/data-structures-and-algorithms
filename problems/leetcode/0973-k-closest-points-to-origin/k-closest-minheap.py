@@ -11,7 +11,8 @@ class Solution:
         heapq.heapify(minHeap)
 
         results = []
-        # loop k times
+        # Time Complexity: O(k log n)
+        # loop k times, pop from heap O(log n)
         while k > 0:
             # get point with the smallest distance
             distance, x, y = heapq.heappop(minHeap)
