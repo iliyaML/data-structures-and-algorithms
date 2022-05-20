@@ -20,7 +20,7 @@ const commonChars = (words) => {
       ++count1[char.charCodeAt(0) - "a".charCodeAt(0)];
     }
 
-    for (let x = 0; x < count.length; ++x) {
+    for (let x = 0; x < countArr.length; ++x) {
       countArr[x] = Math.min(countArr[x], count1[x]);
     }
   }
