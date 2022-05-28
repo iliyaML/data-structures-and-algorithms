@@ -9,6 +9,9 @@ text.charAt(i);
 // code at index
 text.charCodeAt(i);
 
+// returns a string from character code
+String.fromCharCode(97);
+
 // substring, 1st value is position, 2nd value is end position
 text.substring(1, s.length - 1);
 
