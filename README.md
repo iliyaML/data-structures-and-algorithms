@@ -22,6 +22,8 @@
 
 #### Algorithms
 
+- Big O analysis
+
 - Searching
 
   - Linear Search
