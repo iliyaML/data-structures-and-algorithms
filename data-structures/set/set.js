@@ -27,3 +27,11 @@ mySet.clear();
 for (let item of mySet) {
   console.log(item);
 }
+
+// find difference between two sets
+let setA = new Set([1, 2, 3]);
+let setB = new Set([2, 3, 4]);
+
+// items = items in set A that are not present in set B
+let items = [...setA].filter((item) => !setB.has(item));
+console.log(items);
