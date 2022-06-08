@@ -8,14 +8,14 @@
  */
 
 const countMatches = (items, ruleKey, ruleValue) => {
-  const RULE_IDX = new Map([
+  const rules = new Map([
     ["type", 0],
     ["color", 1],
     ["name", 2],
   ]);
 
   return items.reduce(
-    (ans, item) => (item[RULE_IDX[ruleKey]] === ruleValue ? ans + 1 : ans),
+    (ans, item) => (item[rules.get(ruleKey)] === ruleValue ? ans + 1 : ans),
     0
   );
 };
