@@ -13,7 +13,7 @@ class MedianFinder {
   }
 
   /**
-   * Time Complexity: O(n), due to sorting
+   * Time Complexity: O(n log n), due to sorting
    * @return {number}
    */
   findMedian() {
