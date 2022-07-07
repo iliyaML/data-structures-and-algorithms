@@ -35,6 +35,7 @@
 
 - Sorting
 
+  - Bucket Sort
   - Bubble Sort
   - Quick Sort
   - Selection Sort
@@ -43,4 +44,4 @@
   - Radix Sort
   - More...
 
-#### Databases
+#### Relational Databases
