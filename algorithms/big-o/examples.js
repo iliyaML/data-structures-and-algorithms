@@ -1,5 +1,8 @@
 let nums = [1, 3, 4, 5, 10, 9, 8, 7, 6];
 
+// O(1) - constant time
+console.log(nums[5]);
+
 // O(n) - linear search
 for (let num of nums) {
   console.log(num);
