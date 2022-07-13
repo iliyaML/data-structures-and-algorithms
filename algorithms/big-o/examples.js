@@ -19,18 +19,35 @@ for (let i = 0, l = nums.length; i < l; ++i) {
 nums.sort((a, b) => a - b);
 
 // O(log n) - binary search
-let target = 10;
-let start = 0;
-let end = nums.length - 1;
+let binarySearch = (target) => {
+  let start = 0;
+  let end = nums.length - 1;
 
-while (start <= end) {
-  let mid = start + Math.floor((end - start) / 2);
+  while (start <= end) {
+    let mid = start + Math.floor((end - start) / 2);
 
-  if (nums[mid] === target) {
-    return mid;
-  } else if (nums[mid] < target) {
-    start = mid + 1;
-  } else {
-    end = mid - 1;
+    if (nums[mid] === target) {
+      return mid;
+    } else if (nums[mid] < target) {
+      start = mid + 1;
+    } else {
+      end = mid - 1;
+    }
   }
-}
+
+  return -1;
+};
+
+console.log(binarySearch(10));
+
+// O(2^n)
+let fib = (n) => {
+  // base case
+  if (n < 2) {
+    return n;
+  }
+
+  return fib(n - 1) + fib(n - 2);
+};
+
+console.log("fib(10)", fib(10));
