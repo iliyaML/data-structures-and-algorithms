@@ -7,3 +7,11 @@ const map = {
 };
 
 console.log(map);
+
+for (let key in map) {
+  console.log(key, map[key]);
+}
+
+map["key4"] = "val4";
+
+console.log(map["key4"]);
