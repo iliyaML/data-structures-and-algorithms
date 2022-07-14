@@ -28,3 +28,6 @@ for (let i = 0, l = text.length; i < l; ++i) {
 for (let c of text) {
   console.log(c);
 }
+
+// reverse a string
+text.split().reverse().join();

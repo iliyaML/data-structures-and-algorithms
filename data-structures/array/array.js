@@ -32,7 +32,7 @@ arr.toString();
 // joins an array, equivalent to toString()
 arr.join("");
 
-// reverse the array
+// reverse the array (modified in place)
 arr.reverse();
 
 // create an array with a certain size and initial value
@@ -40,10 +40,8 @@ arr.reverse();
 new Array(26).fill(0);
 
 // by default, the sort function sorts the items as strings
-// sorting in ascending order
-arr.sort(function (a, b) {
-  return a - b;
-});
+// sorting in ascending order (modified in place)
+arr.sort((a, b) => a - b);
 
 // looping through items in an array
 for (let i = 0, l = arr.length; i < l; ++i) {
