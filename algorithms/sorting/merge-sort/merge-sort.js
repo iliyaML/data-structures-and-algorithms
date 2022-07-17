@@ -1,7 +1,8 @@
 /**
- * Divide and Conquer
  * Time Complexity: O(n log n)
  * Space Complexity: O(n)
+ * @param {*} nums
+ * @returns
  */
 const mergeSort = (nums) => {
   // base case
