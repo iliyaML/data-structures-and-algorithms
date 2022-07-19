@@ -12,7 +12,7 @@ const canJump = (nums) => {
   let goal = lastIndex;
 
   // iterate through nums from last index to first index
-  for (let i = nums.length - 1; i >= 0; --i) {
+  for (let i = lastIndex; i >= 0; --i) {
     // check if we can reach the goal from
     // current index and our ability to jump (nums[i])
     if (i + nums[i] >= goal) {
