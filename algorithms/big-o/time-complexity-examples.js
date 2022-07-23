@@ -3,8 +3,15 @@ let nums1 = [1, 3, 4, 5, 10, 9, 8, 7, 6];
 // m = # of elements in nums2
 let nums2 = [4, 3, 1, 2, 6];
 
+let map = new Map([
+  [0, 0],
+  [1, 1],
+  [2, 2],
+]);
+
 // O(1) - constant time
 console.log(nums1[5]);
+console.log(map.get(0));
 
 // O(n) - linear search
 for (let num of nums1) {

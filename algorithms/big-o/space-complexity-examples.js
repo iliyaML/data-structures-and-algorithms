@@ -18,3 +18,12 @@ for (let i = 0; i < m; ++i) {
 }
 
 console.log(A);
+
+// O(n)
+let items = [
+  [0, 0],
+  [1, 1],
+  [2, 2],
+];
+let map = new Map(items);
+console.log(map);
