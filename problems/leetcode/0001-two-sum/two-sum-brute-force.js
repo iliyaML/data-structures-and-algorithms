@@ -1,5 +1,6 @@
 /**
  * Brute force solution, loop through the list twice
+ * n = # of elements in nums
  * Time Complexity: O(n^2), nested for loops
  * Space Complexity: O(1)
  * @param {number[]} nums
@@ -21,6 +22,6 @@ const twoSum = (nums, target) => {
     }
   }
 
-  // return empty array if no solution is found
-  return [];
+  // return invalid indices if not found
+  return [-1, -1];
 };

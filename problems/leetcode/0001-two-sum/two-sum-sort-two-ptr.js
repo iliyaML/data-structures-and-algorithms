@@ -1,4 +1,5 @@
 /**
+ * n = # of elements in nums
  * Time Complexity: O(n log n), due to sorting
  * Space Complexity: O(n), create a duplicate copy of nums
  * @param {number[]} nums
