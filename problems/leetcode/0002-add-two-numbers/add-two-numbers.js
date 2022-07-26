@@ -6,6 +6,8 @@
  * }
  */
 /**
+ * m = # of nodes in l1
+ * n = # of nodes in l2
  * Time Complexity: O(max(m, n)), m = l1, n = l2
  * Space Complexity: O(max(m, n))
  * @param {ListNode} l1
