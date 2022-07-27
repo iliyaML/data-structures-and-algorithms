@@ -1,4 +1,6 @@
 /**
+ * m = # of elements in nums1
+ * n = # of elements in nums2
  * Time Complexity: O((m + n) log (m + n)), due to sorting
  * Space Complexity: O(m + n)
  * @param {number[]} nums1
@@ -15,6 +17,11 @@ const findMedianSortedArrays = (nums1, nums2) => {
   for (let num of nums2) {
     result.push(num);
   }
+
+  // shorthand:
+  // const result = nums1.concat(nums2);
+  // or:
+  // const result = [...nums1, ...nums2];
 
   // sort the result array in ascending order
   result.sort((a, b) => a - b);
